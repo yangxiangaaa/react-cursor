@@ -18,7 +18,7 @@ const About: React.FC = () => {
 
   return (
     <div className="about-container">
-      <h1>关于我们</h1>
+      <h1>yiiuiui</h1>
       <div className="about-content">
         <p>
           这是一个使用 React + TypeScript + Vite + Redux + React Router 构建的示例项目。
