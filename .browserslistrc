@@ -1,0 +1,11 @@
+# 生产环境配置
+[production]
+>0.2%
+not dead
+not op_mini all
+
+# 开发环境配置
+[development]
+last 1 chrome version
+last 1 firefox version
+last 1 safari version 

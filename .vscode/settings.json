@@ -1,0 +1,30 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "stylelint.validate": ["css", "less", "postcss"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src",
+    "@components": "${workspaceFolder}/src/components",
+    "@assets": "${workspaceFolder}/src/assets",
+    "@styles": "${workspaceFolder}/src/styles",
+    "@utils": "${workspaceFolder}/src/utils",
+    "@hooks": "${workspaceFolder}/src/hooks",
+    "@pages": "${workspaceFolder}/src/pages",
+    "@store": "${workspaceFolder}/src/store",
+    "@api": "${workspaceFolder}/src/api"
+  },
+  "files.associations": {
+    "*.less": "less"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  }
+}

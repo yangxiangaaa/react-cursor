@@ -1,0 +1,101 @@
+@import url('../styles/variables.less');
+
+.calculator-demo {
+  width: 100%;
+  max-width: 800px;
+  padding: 24px;
+  margin: 20px 0;
+  background-color: @background-color-light;
+  border-radius: @border-radius-base;
+  box-shadow: @box-shadow-base;
+
+  h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    text-align: center;
+    color: @heading-color;
+  }
+
+  .calculator-section {
+    padding: 16px;
+    margin-bottom: 32px;
+    background-color: white;
+    border-radius: @border-radius-base;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+
+    h3 {
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      font-size: 18px;
+      color: @heading-color;
+      border-bottom: 1px solid @border-color-split;
+    }
+
+    .calculator-inputs {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+
+      input,
+      select {
+        padding: 8px 12px;
+        font-size: 14px;
+        border: 1px solid @border-color-base;
+        border-radius: @border-radius-base;
+
+        &:focus {
+          border-color: @primary-color;
+          outline: none;
+          box-shadow: 0 0 0 2px fade(@primary-color, 20%);
+        }
+      }
+
+      input[type='number'] {
+        width: 100px;
+      }
+
+      select {
+        width: 60px;
+      }
+
+      .result {
+        margin-left: 12px;
+        font-size: 16px;
+
+        span {
+          font-weight: bold;
+          color: @primary-color;
+        }
+      }
+    }
+
+    .note {
+      margin-top: 8px;
+      font-size: 14px;
+      color: @text-color-secondary;
+      font-style: italic;
+    }
+  }
+
+  @media (width <= 576px) {
+    padding: 16px;
+
+    .calculator-inputs {
+      flex-direction: column;
+      align-items: flex-start;
+
+      input[type='number'],
+      select {
+        width: 100%;
+      }
+
+      .result {
+        width: 100%;
+        margin-top: 12px;
+        margin-left: 0;
+      }
+    }
+  }
+}
