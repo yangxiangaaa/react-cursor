@@ -91,7 +91,7 @@ type(scope): message
 
 本项目已配置Less支持，你可以直接使用`.less`文件来编写样式。
 
-### 示例
+### 示例 11:30 1:45
 
 1. 创建一个`.less`文件，例如`src/styles/example.less`：
 
