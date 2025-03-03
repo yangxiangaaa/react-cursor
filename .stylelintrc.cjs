@@ -1,14 +1,9 @@
 module.exports = {
-  extends: [
-    'stylelint-config-standard',
-    'stylelint-config-recommended-less',
-  ],
-  plugins: [
-    'stylelint-order',
-  ],
+  extends: ['stylelint-config-standard', 'stylelint-config-recommended-less'],
+  plugins: ['stylelint-order'],
   rules: {
     // 缩进
-    'indentation': 2,
+    indentation: 2,
     // 颜色值小写
     'color-hex-case': 'lower',
     // 禁止空块
@@ -19,15 +14,15 @@ module.exports = {
     'selector-type-no-unknown': [
       true,
       {
-        ignoreTypes: []
-      }
+        ignoreTypes: [],
+      },
     ],
     // 忽略伪类选择器 ::v-deep
     'selector-pseudo-element-no-unknown': [
       true,
       {
-        ignorePseudoElements: ['v-deep', 'deep']
-      }
+        ignorePseudoElements: ['v-deep', 'deep'],
+      },
     ],
     // 禁止低优先级的选择器出现在高优先级的选择器之后
     'no-descending-specificity': null,
@@ -45,6 +40,8 @@ module.exports = {
     'number-leading-zero': 'always',
     // 禁止空第一行
     'no-empty-first-line': true,
+    // 允许未知的属性值，解决Less变量问题
+    'declaration-property-value-no-unknown': null,
     // 属性的排序
     'order/properties-order': [
       'position',
@@ -117,7 +114,7 @@ module.exports = {
       'box-shadow',
       'text-shadow',
       'resize',
-      'transition'
+      'transition',
     ],
   },
   overrides: [
@@ -126,4 +123,4 @@ module.exports = {
       customSyntax: 'postcss-less',
     },
   ],
-} 
+};
