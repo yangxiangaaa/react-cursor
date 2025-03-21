@@ -24,6 +24,9 @@ const Home: React.FC = () => {
             <Button onClick={() => dispatch(increment())} type="primary">
               增加
             </Button>
+            <Button onClick={() => dispatch(increment())} type="primary"> 
+              增加
+            </Button>
           </div>
         </div>
       </div>
