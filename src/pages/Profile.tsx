@@ -8,8 +8,8 @@ const Profile: React.FC = () => {
   const { currentUser, isAuthenticated } = useAppSelector((state) => state.user);
   const dispatch = useAppDispatch();
 
-  const [name, setName] = useState(currentUser?.name || '');
-  const [email, setEmail] = useState(currentUser?.email || '');
+  const [name, setName] = useState(currentUser?.name ?? '');
+  const [email, setEmail] = useState(currentUser?.email ?? '');
 
   const handleLogin = () => {
     // 模拟登录
